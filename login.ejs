@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en, id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Sistem Kendali Pemanas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stylecontainer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- <img src="images/polines-logo-png_seeklogo.png" /> -->
+    <!-- Replace with your image path -->
+    <div class="vid_back">
+      <video class="w-100 h-auto" autoplay muted loop playsinline>
+        <source src="images/ek.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div
+      class="container position-relative"
+      style="z-index: 1; max-width: 400px"
+    >
+      <h1 class="text-center">Sign in to start</h1>
+      <form action="/" method="post">
+        <div>
+          <label for="nama">Name:</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Enter your Name"
+            onkeypress="return /[A-Za-z ]/.test(event.key)"
+            required
+          />
+        </div>
+        <div>
+          <label for="nim">NIM:</label>
+          <input
+            type="text"
+            id="nim"
+            name="nim"
+            placeholder="Enter your NIM"
+            onkeypress="return /[0-9]/.test(event.key)"
+            maxlength="8"
+            required
+          />
+        </div>
+        <div>
+          <label for="kelas">Class:</label>
+          <input
+            type="text"
+            id="kelas"
+            name="kelas"
+            placeholder="Enter your class"
+            maxlength="5"
+            required
+          />
+        </div>
+        <button type="submit">Sign in</button>
+      </form>
+    </div>
+    <footer class="text-center fixed-bottom">
+      Copyright &copy; 2025 D3-Teknik Elektronika Politeknik Negeri Semarang
+    </footer>
+    <script src="javascripts/bootstrap.min.js"></script>
+  </body>
+</html>

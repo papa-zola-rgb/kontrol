@@ -1,0 +1,87 @@
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex column;
+  height: 100vh;
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: rgb(7, 43, 116);
+  color: white;
+  position: fixed;
+  height: 100vh;
+  transition: transform 0.6s;
+  transform: translateX(-100%); /* Tersembunyi */
+  z-index: 1000; /* Pastikan sidebar di atas konten */
+}
+.sidebar.open {
+  transform: translateX(0); /* Tampilkan */
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none; /* Tersembunyi secara default */
+  z-index: 500; /* Di bawah sidebar */
+}
+.overlay.show {
+  display: block; /* Tampilkan overlay */
+}
+
+btn {
+  background-color: #ffffff;
+}
+
+.navbar {
+  background: rgb(8, 33, 94);
+  border: none;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.top_tittle {
+  font-color: #ffffffff;
+  position: sticky;
+  text-align: center;
+}
+.container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+.btn-hover {
+  border: none;
+  background: none;
+}
+
+.btn-hover:hover {
+  background-color: rgb(0, 0, 255);
+  transition: 0.3s;
+}
+
+.btn-info {
+  align-item: center;
+}
+
+.input-group {
+  align-item: center;
+}
+
+.btn-danger{
+  align-item: center;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
